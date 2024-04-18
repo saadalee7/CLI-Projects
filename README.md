@@ -15,3 +15,7 @@ npx @saadalee7/atm-application
 Develop a simple command line currency converter using TypeScipt, Node.js, Inquirer and Chalk.
 Run the following command to experience a CLI program:
 npx @saadalee7/currency-converter
+# TO-DO List
+Develop a simple command line to do list using TypeScipt, Node.js, Inquirer and Chalk.
+Run the following command to experience a CLI program:
+npx @saadalee7/to-do-list
