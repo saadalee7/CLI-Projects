@@ -1,35 +1,6 @@
+#! /usr/bin/env node
 import inquirer from 'inquirer';
 import chalk from 'chalk';
-// const currency :any = {
-//     USD: 1, // base currency
-//     EUR: 0.91,
-//     GBP: 0.76,
-//     INR: 74.57,
-//     PKR: 280
-// }
-// let user_answer = await inquirer.prompt([{
-//     name: 'from',
-//     message: 'Enter From Currency:',
-//     type: 'list',
-//     choices: ['USD', 'EUR', 'GBP', 'INR', 'PKR']
-// },
-// {
-//     name: 'to',
-//     message: 'Enter To Currency:',
-//     type: 'list',
-//     choices: ['USD', 'EUR', 'GBP', 'INR', 'PKR']
-// },
-// {
-//     name: 'amount',
-//     message: 'Enter Your Amount:',
-//     type: 'number'
-// }]);
-// let fromAmount = currency[user_answer.from];
-// let toAmount = currency[user_answer.to];
-// let amount = user_answer.amount;
-// let baseAmount = amount / fromAmount;
-// let convertAmount = baseAmount * toAmount;
-// console.log(`You select from ${fromAmount.list} to ${toAmount.list} and convertion amount is ${convertAmount}`);
 console.log(chalk.bgRed("\n>>>    Welocome to Currency Conversion Application    <<<\n"));
 let currencyConversion = {
     "PKR": {
@@ -91,8 +62,7 @@ async function main() {
         const { from, to, amount } = answer; // destructing user input
         if (from && to && amount) {
             let result = currencyConversion[from][to] * amount;
-            // Fixing the number of decimal points to 2
-            console.log(chalk.italic.green(`\nYour Conversion from "${from}" to "${to}" is "${result.toFixed(0)}".\n`));
+            console.log(chalk.italic.green(`\nYour Conversion from "${from}" to "${to}" is "${result.toFixed(2)}".\n`)); // Fixing the number of decimal points to 2
             let ask = await inquirer.prompt([{
                     name: "ask",
                     type: "confirm",
@@ -108,3 +78,33 @@ async function main() {
     console.log(chalk.bgRed("\n>>>    Thank You for Using!    <<<\n"));
 }
 main();
+// const currency :any = {
+//     USD: 1, // base currency
+//     EUR: 0.91,
+//     GBP: 0.76,
+//     INR: 74.57,
+//     PKR: 280
+// }
+// let user_answer = await inquirer.prompt([{
+//     name: 'from',
+//     message: 'Enter From Currency:',
+//     type: 'list',
+//     choices: ['USD', 'EUR', 'GBP', 'INR', 'PKR']
+// },
+// {
+//     name: 'to',
+//     message: 'Enter To Currency:',
+//     type: 'list',
+//     choices: ['USD', 'EUR', 'GBP', 'INR', 'PKR']
+// },
+// {
+//     name: 'amount',
+//     message: 'Enter Your Amount:',
+//     type: 'number'
+// }]);
+// let fromAmount = currency[user_answer.from];
+// let toAmount = currency[user_answer.to];
+// let amount = user_answer.amount;
+// let baseAmount = amount / fromAmount;
+// let convertAmount = baseAmount * toAmount;
+// console.log(`You select from ${fromAmount.list} to ${toAmount.list} and convertion amount is ${convertAmount}`);
