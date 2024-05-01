@@ -19,3 +19,7 @@ npx @saadalee7/currency-converter
 Develop a simple command line to do list using TypeScipt, Node.js, Inquirer and Chalk.
 Run the following command to experience a CLI program:
 npx @saadalee7/to-do-list
+# Student Management System
+Develop a simple command line student management system using TypeScipt, Node.js, Inquirer and Chalk.
+Run the following command to experience a CLI program:
+npx @saadalee7/student-management-system
