@@ -31,3 +31,7 @@ npx @saadalee7/word-counter
 Develop a simple command line adventure game using TypeScipt, Node.js, Inquirer and Chalk.
 Run the following command to experience a CLI program:
 npx @saadalee7/adventure-game
+# Quiz
+Develop a simple command line quiz using TypeScipt, Node.js, Inquirer and Chalk.
+Run the following command to experience a CLI program:
+npx @saadalee7/quiz
