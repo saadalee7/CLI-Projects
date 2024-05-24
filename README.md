@@ -35,3 +35,7 @@ npx @saadalee7/adventure-game
 Develop a simple command line quiz using TypeScipt, Node.js, Inquirer and Chalk.
 Run the following command to experience a CLI program:
 npx @saadalee7/quiz
+# Countdown Timer
+Develop a simple command line countdown timer using TypeScipt, Node.js, Inquirer and Chalk.
+Run the following command to experience a CLI program:
+npx @saadalee7/countdown-timer
