@@ -39,3 +39,7 @@ npx @saadalee7/quiz
 Develop a simple command line countdown timer using TypeScipt, Node.js, Inquirer and Chalk.
 Run the following command to experience a CLI program:
 npx @saadalee7/countdown-timer
+# OOP Employee Management System
+Develop a simple command line oop using TypeScipt, Node.js, Inquirer and Chalk.
+Run the following command to experience a CLI program:
+npx @saadalee7/oop
